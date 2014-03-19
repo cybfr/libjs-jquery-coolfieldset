@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@ 
+
+override_dh_auto_build:
+	mkdir build
+	uglifyjs -o build/jquery.coolfieldset.min.js js/jquery.coolfieldset.js
+
+override_dh_install:
+	dh_install
+	chmod a-x debian/libjs-jquery-coolfieldset/usr/share/javascript/jquery-coolfieldset/jquery.coolfieldset.js
+
+override_dh_auto_clean:
+	rm -f js/*.min.js
+	rm -fr build
+	dh_auto_clean

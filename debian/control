@@ -1,0 +1,19 @@
+Source: jquery-coolfieldset
+Section: web
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: François-Régis Vuillemin <frv-debian@miradou.com>
+Build-Depends: debhelper (>= 9.0.0), node-uglify
+Standards-Version: 3.9.5
+Homepage: http://w3shaman.com/article/jquery-plugin-collapsible-fieldset
+Vcs-Git: git://anonscm.debian.org/pkg-javascriptmaint/libjs-jquery-coolfieldset.git
+Vcs-Browser: http://anonscm.debian.org/gitweb?p=pkg-javascript/libjs-jquery-coolfieldset.git;a=summary
+
+Package: libjs-jquery-coolfieldset
+Architecture: all
+Depends: libjs-jquery (>= 1.2), ${misc:Depends}, ${shlibs:Depends}
+Description: jQuery Plugin for creating collapsible fieldset
+ This plugin can collapsed or hide fieldset and it's content by clicking it's
+ legend. You can also decide the initial state for your fieldset whether it's
+ expanded or collapsed. The separated CSS file will also useful if you need
+ to modify the fieldset appearance.

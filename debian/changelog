@@ -1,0 +1,5 @@
+jquery-coolfieldset (0.0.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #740957)
+
+ -- François-Régis Vuillemin <frv-debian@miradou.com>  Thu, 06 Mar 2014 13:40:03 +0100
